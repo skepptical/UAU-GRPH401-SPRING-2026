@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media page</title>
+  </head>
+  <body>
+    <h2>Image Tag Example</h2>
+    <img
+      src="images/fireworks-9303542_1280 (1).jpg"
+      alt="firework heart"
+      width="400"
+    />
+
+    <h2>video tag example</h2>
+    <video width="320" height="240" controls>
+      <source src="video/283431_small.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <h2>SVG via Tag Example</h2>
+    <img
+      src="svg/night-with-stars-svgrepo-com.svg"
+      alt="sample image"
+      width="200"
+    />
+    <h2>SVG via code example</h2>
+    <svg
+      width="120"
+      height="120"
+      viewBox="0 0 120 120"
+      role="img"
+      aria-label="Green circle"
+    >
+      <circle cx="60" cy="60" r="45" fill="#f09"></circle>
+    </svg>
+
+    <h2>Canvas code example</h2>
+    <canvas id="myCanvas" width="300" heigh="150"></canvas>
+    <script>
+      const convas = document.getElementById("myCanvas");
+      const ctx = convas.getContext("2d");
+
+      ctx.fillStyle = "#f09";
+      ctx.fillRect(50, 50, 200, 50);
+    </script>
+  </body>
+</html>
