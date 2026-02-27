@@ -1,0 +1,47 @@
+section {
+  text-align: center;
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  margin: 50px 50px;
+  background-color: #f4d41f;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  /*rest of card css here */
+}
+
+#hero h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 70px 70px;
+  background-color: #f4d41f;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.section-title {
+  font-size: 25px;
+  text-align: center;
+  margin: 10px 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.images {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #f4d41f;
+}
