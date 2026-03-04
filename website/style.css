@@ -1,0 +1,149 @@
+/* ============================= */
+/*        STYLE.CSS FILE        */
+/* ============================= */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9eaee;
+  color: #1f1517;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  padding: 80px 20px;
+  text-align: center;
+  background: #fcfcfa;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+header p {
+  margin-top: 20px;
+  color: #5b3d42;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card Design */
+.card {
+  background: #fcfcfa;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  color: #5b3d42;
+  font-size: 0.9rem;
+}
+
+/* Project Page Layout */
+.project-page {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 20px;
+}
+
+.project-page h1 {
+  margin-bottom: 20px;
+}
+
+.project-page h2 {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.project-page p {
+  margin-bottom: 15px;
+  color: #5b3d42;
+}
+
+.project-page img {
+  width: 100%;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+/* Back Link */
+.back-link {
+  display: inline-block;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.back-link:hover {
+  opacity: 0.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .project-page {
+    margin: 40px auto;
+  }
+}
