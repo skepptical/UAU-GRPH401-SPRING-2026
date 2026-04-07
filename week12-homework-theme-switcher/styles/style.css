@@ -1,0 +1,99 @@
+:root {
+  /* Theme 1 — Default */
+  --bg-color: #fcfcfa;
+  --text-color: #1f1517;
+  --accent-color: #dc679b;
+  --card-bg: #f5dce2;
+  --header-bg: #f7b2cd;
+  --header-text: #dc679b;
+}
+
+.theme-two {
+  --bg-color: #1f1517;
+  --text-color: #fcfcfa;
+  --accent-color: #f5dce2;
+  --card-bg: #dc679b;
+  --header-bg: #f7b2cd;
+  --header-text: #1f1517;
+}
+
+.theme-three {
+  --bg-color: #f2f3f9;
+  --text-color: #0000a8;
+  --accent-color: #6ea9ff;
+  --card-bg: #d2e1ff;
+  --header-bg: #a6c8ff;
+  --header-text: #0000a8;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  /* Smooth theme switching — this makes the color change animate instead of snap */
+  transition: all 0.3s ease;
+}
+
+/* ─── Header Layout — also uses Flexbox (more on this next week!) ─── */
+header {
+  display: flex; /* puts children side by side */
+  justify-content: space-between; /* pushes h1 left, buttons right */
+  align-items: center; /* vertically centers both */
+  padding: 20px 40px;
+  background-color: var(--header-bg);
+  color: var(--header-text);
+}
+
+header h1 {
+  margin: 0;
+}
+
+.theme-buttons button {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+  border: none;
+  padding: 8px 16px;
+  margin-left: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card {
+  background-color: var(--card-bg);
+}
+
+/* ─── FLEXBOX TEASER — more on this next week! ─── */
+.cards {
+  display: flex; /* Lines the cards up side by side */
+  gap: 20px; /* Space between each card */
+  padding: 20px 40px 60px;
+}
+
+.card {
+  flex: 1; /* Each card takes up an equal share of the row */
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%; /* Image fills the full width of the card */
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  color: var(--header-text);
+}
+
+/* ─── MOBILE: Stack the cards on small screens ─── */
+@media (max-width: 767px) {
+  .cards {
+    flex-direction: column; /* On mobile, stack cards vertically */
+  }
+}
+
+footer {
+  text-align: center;
+}
